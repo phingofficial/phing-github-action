@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Phing Build
-        uses: phingofficial/phing-github-action@main
+        uses: phingofficial/phing-github-action@v1
 ```
 
 To execute a build with `custom/path/to/build.xml` as a phing build file use:
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Phing Build
-        uses: phingofficial/phing-github-action@main
+        uses: phingofficial/phing-github-action@v1
         with:
             buildfile: custom/path/to/build.xml
 ```
