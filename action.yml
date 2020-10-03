@@ -1,0 +1,17 @@
+name: Phing (phing-gitihub-action)
+description: Run your Phing Build in your Github Actions.
+
+inputs:
+  buildfile:
+    description: use given buildfile
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    action_buildfile: ${{ inputs.buildfile }}
+
+branding:
+  icon: 'skip-forward'
+  color: 'blue'

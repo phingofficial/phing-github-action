@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+PATH=/tmp/vendor/bin:$PATH
+
+cmd="phing"
+
+if [ -n "$action_buildfile" ]
+then
+				cmd="$cmd -f '$action_buildfile'"
+fi
+
+echo "Command: $cmd"
+eval "$cmd"
