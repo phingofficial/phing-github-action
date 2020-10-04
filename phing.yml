@@ -1,12 +1,13 @@
 name: Run a Phing Build
 description: Run your Phing Build in your Github Actions.
+author: The Phing Project
 
 inputs:
   buildfile:
     description: use given buildfile
     required: false
   targets:
-    description: one or more targets seperated by a space
+    description: one or more targets separated by a space
     required: false
 
 runs:

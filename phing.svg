@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     version="1.1" baseProfile="full"
+     viewBox="0 0 400 400"
+     width="400mm" height="400mm">
+    <title>The Phing Project</title>
+    <desc>Logo of the phing project.</desc>
+
+    <polygon id="a" stroke="#438BAA" stroke-width="1mm" points="275,250 335,205 380,285" style="fill:#B2D8E4"/>
+    <polygon id="b" stroke="#438BAA" stroke-width="1mm" points="350,125 395,140 320,230 285,190" style="fill:#86C2D7"/>
+    <polygon id="c" stroke="#438BAA" stroke-width="1mm" points="140,300 165,300 190,390" style="fill:#104252"/>
+    <polygon id="d" stroke="#438BAA" stroke-width="1mm" points="315,260 385,290 315,290" style="fill:#104252"/>
+    <polygon id="e" stroke="#438BAA" stroke-width="1mm" points="190,395 150,265 190,240 190,290 265,305" style="fill:#81BFD6"/>
+    <polygon id="f" stroke="#438BAA" stroke-width="1mm" points="190,220 310,190 320,320 190,290" style="fill:#81BFD6"/>
+    <polygon id="g" stroke="#438BAA" stroke-width="1mm" points="347,75 350,175 310,195 310,150 220,140" style="fill:#B2D8E3"/>
+    <polygon id="h" stroke="#438BAA" stroke-width="1mm" points="250,70 345,75 265,150 215,140" style="fill:#8FC6DB"/>
+    <polygon id="i" stroke="#438BAA" stroke-width="1mm" points="230,0 270,130 250,140 220,140 220,80 175,70" style="fill:#7CBED4"/>
+    <polygon id="j" stroke="#438BAA" stroke-width="1mm" points="25,90 120,130 130,170 120,175 85,145 60,170" style="fill:#104252"/>
+    <polygon id="k" stroke="#438BAA" stroke-width="1mm" points="0,240 85,145 120,175 70,200 70,260" style="fill:#77B9D1"/>
+    <polygon id="l" stroke="#438BAA" stroke-width="1mm" points="70,200 120,175 110,220 165,220 70,300" style="fill:#8FC6DB"/>
+    <polygon id="m" stroke="#438BAA" stroke-width="1mm" points="25,90 120,130 170,100" style="fill:#B1D7E3"/>
+    <polygon id="n" stroke="#438BAA" stroke-width="1mm" points="90,50 225,80 220,140 200,140 170,105 130,160 130,165" style="fill:#B2D8E4"/>
+    <polygon id="o" stroke="#438BAA" stroke-width="1mm" points="160,220 190,220 190,240 150,265 160,300 72,302" style="fill:#B2D8E4"/>
+    <polygon id="p" stroke="#438BAA" stroke-width="1mm" points="200,150 310,190 250,265 205,225 225,225 190,170" style="fill:#104252"/>
+    <polygon id="q" stroke="#438BAA" stroke-width="1mm" points="170,105 205,145 190,175 225,225 120,172" style="fill:#B2D8E4"/>
+    <polygon id="r" stroke="#438BAA" stroke-width="1mm" points="120,175 220,225 110,225" style="fill:#2E6F88"/>
+    <polygon id="s" stroke="#438BAA" stroke-width="1mm" points="200,140 310,150 310,190 205,150" style="fill:#47A1C2"/>
+</svg>
