@@ -7,7 +7,7 @@ Run your Phing Build in your Github Actions.
 
 Create your Github Workflow config in `.github/workflows/build.yml` or similar to run your build against `build.xml`
 
-```
+```yaml
 name: CI
 
 on: [push]
@@ -24,7 +24,7 @@ jobs:
 
 To execute a build with `custom/path/to/build.xml` as a phing build file use:
 
-```
+```yaml
 name: CI
 
 on: [push]
@@ -39,6 +39,25 @@ jobs:
         uses: phingofficial/phing-github-action@v1
         with:
             buildfile: custom/path/to/build.xml
+```
+
+Run targets:
+
+```yaml
+name: CI
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Phing Build
+        uses: phingofficial/phing-github-action@main
+        with:
+            targets: build deploy
 ```
 
 ## Phing in Action

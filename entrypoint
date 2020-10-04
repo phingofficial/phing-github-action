@@ -9,5 +9,10 @@ then
 				cmd="$cmd -f '$action_buildfile'"
 fi
 
+if [ -n "$action_targets" ]
+then
+				cmd="$cmd $action_targets"
+fi
+
 echo "Command: $cmd"
 eval "$cmd"
