@@ -1,4 +1,4 @@
-name: Phing (phing-github-action)
+name: Phing
 description: Run your Phing Build in your Github Actions.
 
 inputs:
