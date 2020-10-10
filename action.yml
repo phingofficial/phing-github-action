@@ -1,5 +1,5 @@
 name: Run a Phing Build
-description: Run your Phing Build in your GITHub Action.
+description: Run your Phing Build in your GiTHub Action.
 author: The Phing Project
 
 inputs:
