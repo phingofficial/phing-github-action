@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Phing Build
-        uses: phingofficial/phing-github-action@v1
+        uses: phingofficial/phing-github-action@main
 ```
 
 ### General parameters
@@ -31,7 +31,7 @@ jobs:
 | user-properties | user properties as space separated list [a=b c=d] | n/a         |
 | version         | phing version to use                              | 2.16.3      |
 
-To execute a build with `custom/path/to/build.xml` as a phing build file use:
+#### To execute a build with `custom/path/to/build.xml` as a phing build file use:
 
 ```yaml
 name: CI
@@ -45,12 +45,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Phing Build
-        uses: phingofficial/phing-github-action@v1
+        uses: phingofficial/phing-github-action@main
         with:
             buildfile: custom/path/to/build.xml
 ```
 
-Run targets:
+#### Run targets:
 
 ```yaml
 name: CI
@@ -69,7 +69,7 @@ jobs:
             targets: build deploy
 ```
 
-Invoke with user properties:
+#### Invoke with user properties:
 
 ```yaml
 name: CI
