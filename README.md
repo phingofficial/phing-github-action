@@ -22,7 +22,16 @@ jobs:
         uses: phingofficial/phing-github-action@v1
 ```
 
-To execute a build with `custom/path/to/build.xml` as a phing build file use:
+### General parameters
+
+| parameter | description | default |
+|---|---|---|
+| buildfile       | location of the build file                        | `build.xml` |
+| targets         | targets to run as space separated list            | n/a         |
+| user-properties | user properties as space separated list [a=b c=d] | n/a         |
+| version         | phing version to use                              | 2.16.3      |
+
+#### To execute a build with `custom/path/to/build.xml` as a phing build file use:
 
 ```yaml
 name: CI
@@ -41,7 +50,7 @@ jobs:
             buildfile: custom/path/to/build.xml
 ```
 
-Run targets:
+#### Run targets:
 
 ```yaml
 name: CI
@@ -60,7 +69,7 @@ jobs:
             targets: build deploy
 ```
 
-Invoke with user properties:
+#### Invoke with user properties:
 
 ```yaml
 name: CI
