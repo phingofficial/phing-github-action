@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Phing Build
-        uses: phingofficial/phing-github-action@v1
+        uses: phingofficial/phing-github-action@main
 ```
 
 ### General parameters
@@ -45,7 +45,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Phing Build
-        uses: phingofficial/phing-github-action@v1
+        uses: phingofficial/phing-github-action@main
         with:
             buildfile: custom/path/to/build.xml
 ```
