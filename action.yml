@@ -1,8 +1,12 @@
 name: Run a Phing Build
-description: Run your Phing Build in your Github Actions.
+description: Run your Phing Build in your GiTHub Action.
 author: The Phing Project
 
 inputs:
+  version:
+    description: use given phing version
+    default: 2.16.3
+    required: false
   buildfile:
     description: use given buildfile
     required: false
@@ -34,6 +38,8 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - PHING_VERSION=${{ inputs.version }}
   env:
     ACTION_BUILDFILE: ${{ inputs.buildfile }}
     ACTION_TARGETS: ${{ inputs.targets }}

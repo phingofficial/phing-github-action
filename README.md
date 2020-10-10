@@ -111,6 +111,27 @@ jobs:
             debug: true
 ```
 
+### Versions
+
+By default, the action will use `phing 2.16.3`.
+To change that behavior use the action with the `version` parameter.
+```yaml
+name: CI
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Phing Build
+        uses: phingofficial/phing-github-action@main
+        with:
+            version: 3.0.0-alpha4
+```
+
 ## Phing in Action
 
 [Example "Phing Build" Project](https://github.com/phingofficial/phing-github-action-example/runs/1203313448?check_suite_focus=true#step:4:9)
