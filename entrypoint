@@ -36,10 +36,8 @@ fi
 
 if [ -n "$ACTION_USERPROPS" ]
 then
-    for i in $ACTION_USERPROPS ; do 
-      KEY=${i%=*};
-      VAL=${i#*=};
-      cmd="${cmd} -D${KEY}=${VAL} ";
+    for kv in $ACTION_USERPROPS ; do
+      cmd="${cmd} -D${kv} ";
     done
     [[ "cmd" =~ .*[^[:space:]] ]]
 fi
