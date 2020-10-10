@@ -1,11 +1,11 @@
-# <img src="https://raw.githubusercontent.com/phingofficial/phing-github-action/main/action.svg" width="50" /> Phing GITHub Action
-Run your Phing Build in your Github Actions.
+# <img src="https://raw.githubusercontent.com/phingofficial/phing-github-action/main/action.svg" width="50" /> Phing GitHub Action
+Run your Phing Build in your GitHub Actions.
 
 > **PH**ing **I**s **N**ot **G**NU make; it's a PHP project build system or build tool based on Apache Ant. You can do anything with it that you could do with a traditional build system like GNU make, and its use of simple XML build files and extensible PHP "task" classes make it an easy-to-use and highly flexible build framework.
 
 ## Configuration
 
-Create your GITHub Workflow config in `.github/workflows/build.yml` or similar to run your build against `build.xml`
+Create your GiTHub Workflow config in `.github/workflows/build.yml` or similar to run your **phing** `build.xml`
 
 ```yaml
 name: CI
