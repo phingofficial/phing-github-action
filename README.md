@@ -22,6 +22,15 @@ jobs:
         uses: phingofficial/phing-github-action@v1
 ```
 
+### General parameters
+
+| parameter | description | default |
+|---|---|---|
+| buildfile       | location of the build file                        | `build.xml` |
+| targets         | targets to run as space separated list            | n/a         |
+| user-properties | user properties as space separated list [a=b c=d] | n/a         |
+| version         | phing version to use                              | 2.16.3      |
+
 To execute a build with `custom/path/to/build.xml` as a phing build file use:
 
 ```yaml
