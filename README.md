@@ -60,6 +60,25 @@ jobs:
             targets: build deploy
 ```
 
+Invoke with user properties:
+
+```yaml
+name: CI
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Phing Build
+        uses: phingofficial/phing-github-action@main
+        with:
+            user-properties: foo=bar my=self you=too
+```
+
 ### Control output:
 
 | parameter | description |

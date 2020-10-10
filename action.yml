@@ -9,6 +9,9 @@ inputs:
   targets:
     description: one or more targets separated by a space
     required: false
+  user-properties:
+    description: one or more user properties as key value pair separated by a space like "foo=bar hello=world"
+    required: false
   quiet:
     description: if it is set then be extra quiet
     required: false
@@ -40,6 +43,7 @@ runs:
     ACTION_DEBUG: ${{ inputs.debug }}
     ACTION_EMACS: ${{ inputs.emacs }}
     ACTION_LONGTARGETS: ${{ inputs.longtargets }}
+    ACTION_USERPROPS: ${{ inputs.user-properties }}
 
 branding:
   icon: 'skip-forward'
