@@ -4,14 +4,44 @@ PATH=/tmp/vendor/bin:$PATH
 
 cmd="phing"
 
-if [ -n "$action_buildfile" ]
+if [ -n "$ACTION_QUIET" ]
 then
-				cmd="$cmd -f '$action_buildfile'"
+    cmd="$cmd -quiet"
 fi
 
-if [ -n "$action_targets" ]
+if [ -n "$ACTION_SILENT" ]
 then
-				cmd="$cmd $action_targets"
+    cmd="$cmd -silent"
+fi
+
+if [ -n "$ACTION_VERBOSE" ]
+then
+    cmd="$cmd -verbose"
+fi
+
+if [ -n "$ACTION_DEBUG" ]
+then
+    cmd="$cmd -debug"
+fi
+
+if [ -n "$ACTION_EMACS" ]
+then
+    cmd="$cmd -emacs"
+fi
+
+if [ -n "$ACTION_LONGTARGETS" ]
+then
+    cmd="$cmd -longtargets"
+fi
+
+if [ -n "$ACTION_BUILDFILE" ]
+then
+    cmd="$cmd -f '$ACTION_BUILDFILE'"
+fi
+
+if [ -n "$ACTION_TARGETS" ]
+then
+    cmd="$cmd $ACTION_TARGETS"
 fi
 
 echo "Command: $cmd"
