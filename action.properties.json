@@ -1,6 +1,0 @@
-{
-  "name": "Run a Phing Build",
-  "description": "Run your Phing Build in your Github Actions.",
-  "iconName": "action",
-  "categories": ["Continuous integration","Utilities"]
-}

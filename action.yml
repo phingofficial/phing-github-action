@@ -9,13 +9,37 @@ inputs:
   targets:
     description: one or more targets separated by a space
     required: false
+  quiet:
+    description: if it is set then be extra quiet
+    required: false
+  silent:
+    description: if it is set then print nothing but task outputs and build failures
+    required: false
+  verbose:
+    description: if it is set then be extra verbose
+    required: false
+  debug:
+    description: if it is set then print debugging information
+    required: false
+  emacs:
+    description: if it is set then produce logging information without adornments
+    required: false
+  longtargets:
+    description: if it is set then show target descriptions during build
+    required: false
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    action_buildfile: ${{ inputs.buildfile }}
-    action_targets: ${{ inputs.targets }}
+    ACTION_BUILDFILE: ${{ inputs.buildfile }}
+    ACTION_TARGETS: ${{ inputs.targets }}
+    ACTION_QUIET: ${{ inputs.quiet }}
+    ACTION_SILENT: ${{ inputs.silent }}
+    ACTION_VERBOSE: ${{ inputs.verbose }}
+    ACTION_DEBUG: ${{ inputs.debug }}
+    ACTION_EMACS: ${{ inputs.emacs }}
+    ACTION_LONGTARGETS: ${{ inputs.longtargets }}
 
 branding:
   icon: 'skip-forward'
