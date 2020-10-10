@@ -1,10 +1,16 @@
 FROM composer:1.10
 
-LABEL version="2.0.0"
+MAINTAINER Phing <info@phing.info>
+
+LABEL version="3.0.0"
 LABEL repository="https://github.com/phingofficial/phing-github-action"
 LABEL homepage="https://github.com/phingofficial/phing-github-action"
-LABEL maintainer="Siad Ardroumli <siad.ardroumli@gmail.com>"
+LABEL author="Siad Ardroumli <siad.ardroumli@gmail.com>"
 
-RUN composer global require --no-progress phing/phing 2.*
+ARG PHING_VERSION=2.16.3
+
+RUN composer global require --no-progress phing/phing-composer-configurator dev-master && \
+    composer global require --no-progress phing/phing $PHING_VERSION
+
 COPY entrypoint /usr/local/bin/entrypoint
 ENTRYPOINT ["/usr/local/bin/entrypoint"]
